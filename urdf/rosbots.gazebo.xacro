@@ -2,8 +2,8 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rosbots" >
   
   <gazebo reference="wheel_left_fwd_link">
-  <mu1>1.0</mu1>
-  <mu2>1.0</mu2>
+  <mu1>8.0</mu1>
+  <mu2>8.0</mu2>
   <kp>1000000.0</kp>
   <kd>100.0</kd>
   <minDepth>0.001</minDepth>
@@ -11,8 +11,8 @@
 </gazebo>
 
 <gazebo reference="wheel_left_back_link">
-  <mu1>1.0</mu1>
-  <mu2>1.0</mu2>
+  <mu1>8.0</mu1>
+  <mu2>8.0</mu2>
   <kp>1000000.0</kp>
   <kd>100.0</kd>
   <minDepth>0.001</minDepth>
@@ -20,8 +20,8 @@
 </gazebo>
 
 <gazebo reference="wheel_right_fwd_link">
-  <mu1>1.0</mu1>
-  <mu2>1.0</mu2>
+  <mu1>8.0</mu1>
+  <mu2>8.0</mu2>
   <kp>1000000.0</kp>
   <kd>100.0</kd>
   <minDepth>0.001</minDepth>
@@ -29,8 +29,8 @@
 </gazebo>
 
 <gazebo reference="wheel_right_back_link">
-  <mu1>1.0</mu1>
-  <mu2>1.0</mu2>
+  <mu1>8.0</mu1>
+  <mu2>8.0</mu2>
   <kp>1000000.0</kp>
   <kd>100.0</kd>
   <minDepth>0.001</minDepth>
@@ -71,11 +71,11 @@
     <rightFrontJoint>wheel_right_fwd_joint</rightFrontJoint>
     <leftRearJoint>wheel_left_back_joint</leftRearJoint>
     <rightRearJoint>wheel_right_back_joint</rightRearJoint>
-    <wheelSeparation>1.1</wheelSeparation>
-    <wheelDiameter>0.52</wheelDiameter>
+    <wheelSeparation>0.77</wheelSeparation>
+    <wheelDiameter>0.46</wheelDiameter>
     <wheelAcceleration>2</wheelAcceleration>
     <torque>35</torque>
-    <commandTopic>/part2_cmr/cmd_vel</commandTopic>
+    <commandTopic>/cmd_vel</commandTopic>
     <odometryTopic>odom</odometryTopic>
     <odometryFrame>odom</odometryFrame>
     <robotBaseFrame>base_link</robotBaseFrame>
